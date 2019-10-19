@@ -15,7 +15,7 @@ $anggota = query("SELECT * FROM anggota");
 </head>
 <body>
 <div class="container">
-    <h1>Daftar Mahasiswa KLiM</h1>
+    <h1 class="center">Daftar Mahasiswa KLiM</h1>
 
     <!-- tambah data -->
     <a class="waves-effect waves-light btn" href="add.php">Tambah Data</a>
