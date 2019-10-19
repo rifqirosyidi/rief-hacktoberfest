@@ -9,13 +9,16 @@ $anggota = query("SELECT * FROM anggota");
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <title>Halaman Admin</title>
 </head>
 <body>
+<div class="container">
     <h1>Daftar Mahasiswa KLiM</h1>
 
     <!-- tambah data -->
-    <a href="add.php">Tambah Data</a>
+    <a class="waves-effect waves-light btn" href="add.php">Tambah Data</a>
 
 <br> <br>
     
@@ -45,8 +48,8 @@ $anggota = query("SELECT * FROM anggota");
             <td><?= $row["jurusan"]; ?></td>
             <td><?= $row["email"]; ?></td>
             <td>
-                <a href="edit.php?id=<?= $row["id"]; ?>">Edit</a> |
-                <a href="delete.php?id=<?= $row["id"]; ?>"
+                <a class="waves-effect waves-light btn" href="edit.php?id=<?= $row["id"]; ?>">Edit</a> |
+                <a class="waves-effect waves-light btn red darken-4" href="delete.php?id=<?= $row["id"]; ?>"
                 onclick ="return confirm('Yakin Ingin menghapus data ?')">Delete</a>
             </td>
         </tr>
@@ -58,6 +61,8 @@ $anggota = query("SELECT * FROM anggota");
         <?php endforeach; ?>
     </table>
     <!-- akhir table -->
-
+    </div>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 </html>

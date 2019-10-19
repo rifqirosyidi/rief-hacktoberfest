@@ -41,8 +41,11 @@ if( isset($_POST["submit"])){
 <html lang="en">
 <head>
     <title>Edit Data</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 </head>
 <body>
+<div class="container">
     <h1>Edit Data</h1>
 
     <form action="" method="post">  <!-- atribut (action : ) dan (method : hiden di url) -->
@@ -78,10 +81,15 @@ if( isset($_POST["submit"])){
             </li>
 
             <li>
-                <button type="submit" name="submit">Ubah Data</button>
+                <button class="waves-effect waves-light btn" type="submit" name="submit">Ubah Data</button>
             </li>
             
         </ul>
     </form>
+<div>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
 </body>
 </html>
