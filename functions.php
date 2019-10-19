@@ -2,7 +2,7 @@
 //merapikan halaman supaya tidak mengulang2 koneksi di setiap halaman
 
 //koneksi ke database
-$koneksidb = mysqli_connect("localhost", "root", "", "klim");
+$koneksidb = mysqli_connect("localhost", "root", "noPassword", "klim");
 
 //function query disini menangkap dari index.php
 function query($sql) { //parameter $sql menangkap dr query
